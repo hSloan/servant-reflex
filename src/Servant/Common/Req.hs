@@ -298,7 +298,6 @@ performRequests reqMeth rs reqHost opts trigger = do
 performSomeRequestsAsync
     :: (MonadIO (Performable m),
         MonadJSM (Performable m),
-        HasWebView (Performable m),
         PerformEvent t m,
         TriggerEvent t m,
         Traversable f,
